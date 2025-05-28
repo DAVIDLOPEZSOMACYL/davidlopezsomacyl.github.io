@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es"> {/* Cambiado a "es" para español */}
+  <head>
+    <meta charset="UTF-8" />
+    {/* El favicon.ico se sirve desde la carpeta public por defecto */}
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" /> {/* O el tipo de icono que tengas */}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {/* El manifest.json se sirve desde la carpeta public por defecto */}
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" href="./logoRTF.png" type="image/png"> <!-- Añadida esta línea para el favicon -->
+    {/* Título de la página */}
+    <title>Retechfor Project</title>
+
+    {/* Aquí podrías añadir enlaces a fuentes de Google Fonts si las usas globalmente */}
+    {/* Ejemplo:
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    */}
+  </head>
+  <body>
+    {/* Este es el div donde se montará tu aplicación React. */}
+    <div id="root"></div>
+
+    {/*
+      Este script carga el punto de entrada de tu aplicación React.
+      Asegúrate de que la ruta 'src' coincida con la ubicación y el nombre
+      de tu archivo principal de JavaScript (index.js o main.js).
+      Para Vite, la ruta suele ser relativa a la raíz del proyecto.
+    */}
+    <script type="module" src="/src/index.js"></script> {/* Asegúrate que esta ruta es correcta para tu proyecto */}
+  </body>
+</html>
