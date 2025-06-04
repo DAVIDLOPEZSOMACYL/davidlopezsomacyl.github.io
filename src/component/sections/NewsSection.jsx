@@ -2,6 +2,7 @@ import React from 'react';
 import MicrolinkCard from '@microlink/react';
 import { Grid, Paper, Typography, Box } from '@mui/material';
 import SectionContainer from '../common/SectionContainer';
+import ArticuloNoticiaDestacado from '../news_items/ArticuloNoticiaDestacado';
 
 const urls = [
   'https://theobjective.com/espana/castilla-y-leon/2025-02-11/castilla-y-leon-impulsa-innovacion-forestal-europa/',
@@ -38,7 +39,6 @@ const NewsCardItem = ({ url, cardSize }) => {
       <MicrolinkCard
         url={url}
         size={cardSize}
-        // size='small'
         lazy
         style={{ width: '100%', flexGrow: 1 }}
       />
@@ -58,20 +58,27 @@ const NewsSection = ({ id }) => {
       title="Noticias Relevantes"
       backgroundColor="background.default"
     >
+      <ArticuloNoticiaDestacado />
+
       {urls.length > 0 ? (
-        <Grid container spacing={4}>
-          {urls.map((url, index) => {
-            const sizeForThisCard = getCardSize(url);
-            return (
-              <Grid xs={12} sm={6} md={4} key={index} sx={{ display: 'flex' }}>
-                <NewsCardItem url={url} cardSize={sizeForThisCard} />
-              </Grid>
-            );
-          })}
-        </Grid>
+        <>
+          <Typography variant="h6" component="h3" gutterBottom align="center" sx={{ mt: 4, mb: 3, fontWeight: 'medium'}}>
+            Más Noticias
+          </Typography>
+          <Grid container spacing={4} justifyContent="center">
+            {urls.map((url, index) => {
+              const sizeForThisCard = getCardSize(url);
+              return (
+                <Grid xs={12} sm={6} md={4} key={index} sx={{ display: 'flex' }}>
+                  <NewsCardItem url={url} cardSize={sizeForThisCard} />
+                </Grid>
+              );
+            })}
+          </Grid>
+        </>
       ) : (
         <Typography variant="subtitle1" align="center" color="text.secondary" sx={{ mt: 4 }}>
-          No hay noticias para mostrar en este momento.
+          No hay más noticias para mostrar en este momento.
         </Typography>
       )}
     </SectionContainer>

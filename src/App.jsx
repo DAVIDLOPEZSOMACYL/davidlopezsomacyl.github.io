@@ -26,8 +26,8 @@ const sectionIds = {
   objectives: 'objectives',
   adjustments: 'adjustments',
   generalLines: 'generalLines',
-  news: 'news',
   consortium: 'consortium',
+  contactFooter: 'contact-footer'
 };
 
 const renderMissingSectionPlaceholder = (id, name) => (
@@ -67,17 +67,20 @@ function App() {
               {sectionIds.mision ? <MisionSection id={sectionIds.mision} /> : renderMissingSectionPlaceholder('mision', 'Misión')}
               {sectionIds.adjustments ? <AdjustmentsSection id={sectionIds.adjustments} /> : renderMissingSectionPlaceholder('adjustments', 'Adecuación')}
               {sectionIds.generalLines ? <GeneralLinesSection id={sectionIds.generalLines} /> : renderMissingSectionPlaceholder('generalLines', 'Líneas generales')}
-              {sectionIds.news ? <NewsSection id={sectionIds.news} /> : renderMissingSectionPlaceholder('news', 'Noticias')}
               {sectionIds.consortium ? <ConsortiumSection id={sectionIds.consortium} /> : renderMissingSectionPlaceholder('consortium', 'Colaboran')}
             </>
           )}
 
           {currentPage === 'tramites' && (
-            <TramitesSection id="tramites-page-content" /> 
+            <TramitesSection id="tramites-page-content" />
+          )}
+
+          {currentPage === 'news' && (
+            <NewsSection id="news-page-content" />
           )}
         </Box>
 
-        <Footer id={sectionIds.contactFooter} /> 
+        <Footer id={sectionIds.contactFooter} />
       </Box>
     </ThemeProvider>
   );
