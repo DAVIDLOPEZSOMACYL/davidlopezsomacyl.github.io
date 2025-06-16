@@ -6,22 +6,22 @@ import ActionButtonsBlock from '../common/tramites/ActionButtonsBlock';
 // Datos para los bloques de trámites.
 const tramitesData = [
   {
-    title: "Convocatoria General de Ayudas",
-    subtitle: "Accede a la documentación oficial de la convocatoria y realiza tu solicitud a través de la sede electrónica.",
-    pdfUrl: "/RetcheFOR.pdf",
-    sedeUrl: "https://www.tramitacastillayleon.jcyl.es/",
+    title: "Proyectos de emprendimiento digital y startups forestales en el ámbito de Castilla y León",
+   // subtitle: "Proyectos de emprendimiento digital y startups forestales en el ámbito de Castilla y León",
+    pdfUrl: "BOCYL-D-16062025-5.pdf",
+    //sedeUrl: "https://www.tramitacastillayleon.jcyl.es/",
   },
   {
-    title: "Justificación de Subvenciones",
-    subtitle: "Consulta la guía de justificación y presenta la documentación requerida en la plataforma online.",
-    pdfUrl: "/documents/guia_justificacion_retechfor.pdf",
-    sedeUrl: "https://www.tramitacastillayleon.jcyl.es/justificaciones",
+    title: "Digitalización y la transformación digital de las empresas de primera transformación de la madera y otros productos forestales.",
+    //subtitle: "Digitalización y la transformación digital de las empresas de primera transformación de la madera y otros productos forestales.",
+    pdfUrl: "BOCYL-D-16062025-6.pdf",
+    //sedeUrl: "https://www.tramitacastillayleon.jcyl.es/justificaciones",
   },
   {
-    title: "Consultas y Preguntas Frecuentes",
-    subtitle: "Encuentra respuestas a las dudas más comunes y accede a la documentación de soporte.",
-    pdfUrl: "/documents/faq_retechfor.pdf",
-    sedeUrl: "https://www.tramitacastillayleon.jcyl.es/contacto-ayudas",
+    title: "Ejecución del proyecto «Red tecnológica y territorial para el monitoreo forestal y reducción de desastres ambientales como palancas para el desarrollo de la bioeconomía forestal (RETECHFOR).",
+    //subtitle: "Ejecución del proyecto «Red tecnológica y territorial para el monitoreo forestal y reducción de desastres ambientales como palancas para el desarrollo de la bioeconomía forestal (RETECHFOR).",
+    pdfUrl: "BOCYL-D-16062025-7.pdf",
+   // sedeUrl: "https://www.tramitacastillayleon.jcyl.es/contacto-ayudas",
   },
 ];
 

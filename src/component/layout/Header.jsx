@@ -19,7 +19,7 @@ import logo from '../../assets/logo_1.png';
 
 const navItemsDefinition = [
   { label: 'Inicio', href: '#home', type: 'scroll', pageTarget: 'main' },
-  // { label: 'Trámites', type: 'page', pageTarget: 'tramites' },
+  { label: 'Trámites', type: 'page', pageTarget: 'tramites' },
   { label: 'Noticias', type: 'page', pageTarget: 'news' },
   { label: 'Colaboran', href: '#consortium', type: 'scroll', pageTarget: 'main' }
 ];
