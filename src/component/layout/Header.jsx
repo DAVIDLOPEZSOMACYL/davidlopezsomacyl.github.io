@@ -19,10 +19,11 @@ import logo from '../../assets/logo_1.png';
 
 const navItemsDefinition = [
   { label: 'Inicio', href: '#home', type: 'scroll', pageTarget: 'main' },
+   { label: 'Memoria', href: 'retechfor_v.03.pdf', target: '_blank', type: 'external' },
   { label: 'Trámites', type: 'page', pageTarget: 'tramites' },
   { label: 'Noticias', type: 'page', pageTarget: 'news' },
   { label: 'Colaboran', href: '#consortium', type: 'scroll', pageTarget: 'main' },
-   { label: 'Memoria', href: 'retechfor_v.03.pdf', target: '_blank', type: 'external' },
+ 
 ];
 
 function Header({ navSectionIds, navigateTo, currentPage }) {
