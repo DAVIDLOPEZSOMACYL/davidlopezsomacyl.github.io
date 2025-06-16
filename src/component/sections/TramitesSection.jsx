@@ -19,7 +19,7 @@ const tramitesData = [
   },
   {
     title: "Ejecución del proyecto «Red tecnológica y territorial para el monitoreo forestal y reducción de desastres ambientales como palancas para el desarrollo de la bioeconomía forestal (RETECHFOR).",
-    //subtitle: "Ejecución del proyecto «Red tecnológica y territorial para el monitoreo forestal y reducción de desastres ambientales como palancas para el desarrollo de la bioeconomía forestal (RETECHFOR).",
+    //subtitle: "Ejecución del proyecto «Red tecnológica y territorial para el monitoreo forestal y reducción de desastres ambientales como palancas para el desarrollo de la bioeconomía forestal (RETECHFOR).»",
     pdfUrl: "BOCYL-D-16062025-7.pdf",
    // sedeUrl: "https://www.tramitacastillayleon.jcyl.es/contacto-ayudas",
   },
