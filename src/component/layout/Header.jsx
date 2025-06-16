@@ -21,7 +21,8 @@ const navItemsDefinition = [
   { label: 'Inicio', href: '#home', type: 'scroll', pageTarget: 'main' },
   { label: 'Trámites', type: 'page', pageTarget: 'tramites' },
   { label: 'Noticias', type: 'page', pageTarget: 'news' },
-  { label: 'Colaboran', href: '#consortium', type: 'scroll', pageTarget: 'main' }
+  { label: 'Colaboran', href: '#consortium', type: 'scroll', pageTarget: 'main' },
+   { label: 'Memoria', href: 'retechfor_v.03.pdf', target: '_blank', type: 'external' },
 ];
 
 function Header({ navSectionIds, navigateTo, currentPage }) {
@@ -34,6 +35,10 @@ function Header({ navSectionIds, navigateTo, currentPage }) {
   };
 
   const handleNavLinkClick = (event, item) => {
+    if (item.type === 'external') {
+      // Si es un enlace externo, no hagas nada y deja que el navegador actúe.
+      return;
+    }
     if (item.type === 'page') {
       event.preventDefault();
       navigateTo(item.pageTarget);
@@ -73,13 +78,17 @@ function Header({ navSectionIds, navigateTo, currentPage }) {
       </Box>
       <List>
         {navItemsDefinition.map((item) => (
-          <ListItem
+         
+         
+         <ListItem
             key={item.label}
             disablePadding 
           >
             <ListItemButton
               component="a"
-              href={item.type === 'scroll' ? item.href : '#'}
+              //href={item.type === 'scroll' ? item.href : '#'}
+              href={(item.type === 'scroll' || item.type === 'external') ? item.href : '#'}
+              target={item.target || '_self'} // <-- ASEGÚRATE DE QUE ESTA LÍNEA ESTÉ AQUÍ
               onClick={(e) => handleNavLinkClick(e, item)}
               selected={item.type === 'page' && currentPage === item.pageTarget}
               sx={{
@@ -148,7 +157,9 @@ function Header({ navSectionIds, navigateTo, currentPage }) {
                 <Button
                   key={item.label}
                   component="a"
-                  href={item.type === 'scroll' ? item.href : '#'}
+                  //href={item.type === 'scroll' ? item.href : '#'}
+                  href={(item.type === 'scroll' || item.type === 'external') ? item.href : '#'}
+                  target={item.target || '_self'}
                   onClick={(e) => handleNavLinkClick(e, item)}
                   variant={item.label === 'Trámites' ? 'navSpecial' : undefined }
                   sx={{

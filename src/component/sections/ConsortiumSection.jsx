@@ -19,6 +19,11 @@ const partnersData = [
     logoSrc: gobiernoEspana,
     website: 'https://administracion.gob.es/',
   },
+   {
+    name: 'Plan de recuperacion, Transformación y Resiliencia',
+    logoSrc: Recuperacion,
+    website: 'https://planderecuperacion.gob.es/',
+  },
   {
     name: 'Junta de Castilla y León',
     logoSrc: JuntaCyL,
@@ -29,11 +34,7 @@ const partnersData = [
     logoSrc: GobCanarias,
     website: 'https://www.gobiernodecanarias.org/principal/',
   },
-  {
-    name: 'Plan de recuperacion, Transformación y Resiliencia',
-    logoSrc: Recuperacion,
-    website: 'https://planderecuperacion.gob.es/',
-  },
+ 
 ];
 
 function ConsortiumSection({ id }) {
