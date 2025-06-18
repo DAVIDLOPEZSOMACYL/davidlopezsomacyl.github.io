@@ -6,9 +6,11 @@ import {
   Link as MuiLink,
   Grid,
   Divider,
+  IconButton
 } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 function Footer({ id }) {
   const currentYear = new Date().getFullYear();
@@ -55,6 +57,28 @@ function Footer({ id }) {
               >
                 info@retechfor.es
               </MuiLink>
+            </Box>
+          </Grid>
+          
+          {/* Sección Sígueme simplificada */}
+          <Grid item xs={12} sm={4} md={3}>
+            <Typography
+              variant="h6"
+              gutterBottom
+              sx={{ textAlign: {xs: 'center', md: 'left'} }}
+            >
+              Síguenos
+            </Typography>
+            <Box sx={{ display: "flex", justifyContent: {xs: 'center', md: 'flex-start'} }}>
+              <IconButton 
+                href="https://www.linkedin.com/company/retechfor-cyl/?viewAsMember=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                color="inherit"
+                sx={{ '&:hover': { color: '#0077b5' } }}
+              >
+                <LinkedInIcon fontSize="large" />
+              </IconButton>
             </Box>
           </Grid>
         </Grid>
