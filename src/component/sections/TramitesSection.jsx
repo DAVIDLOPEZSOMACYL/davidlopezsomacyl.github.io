@@ -9,19 +9,19 @@ const tramitesData = [
     title: "Proyectos de emprendimiento digital y startups forestales en el ámbito de Castilla y León",
    // subtitle: "Proyectos de emprendimiento digital y startups forestales en el ámbito de Castilla y León",
     pdfUrl: "BOCYL-D-16062025-5.pdf",
-    //sedeUrl: "https://www.tramitacastillayleon.jcyl.es/",
+    sedeUrl: "https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100Detalle/1251181050732/Ayuda012/1285530691845/Propuesta",
   },
   {
     title: "Digitalización y la transformación digital de las empresas de primera transformación de la madera y otros productos forestales.",
     //subtitle: "Digitalización y la transformación digital de las empresas de primera transformación de la madera y otros productos forestales.",
     pdfUrl: "BOCYL-D-16062025-6.pdf",
-    //sedeUrl: "https://www.tramitacastillayleon.jcyl.es/justificaciones",
+    sedeUrl: "https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100Detalle/1251181050732/Ayuda012/1285531145061/Propuesta",
   },
   {
     title: "Ejecución del proyecto «Red tecnológica y territorial para el monitoreo forestal y reducción de desastres ambientales como palancas para el desarrollo de la bioeconomía forestal (RETECHFOR).»",
     //subtitle: "Ejecución del proyecto «Red tecnológica y territorial para el monitoreo forestal y reducción de desastres ambientales como palancas para el desarrollo de la bioeconomía forestal (RETECHFOR).»",
     pdfUrl: "BOCYL-D-16062025-7.pdf",
-   // sedeUrl: "https://www.tramitacastillayleon.jcyl.es/contacto-ayudas",
+    sedeUrl: "https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100Detalle/1251181050732/Ayuda012/1285531207418/Propuesta",
   },
 ];
 
