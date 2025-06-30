@@ -87,7 +87,7 @@ function Footer({ id }) {
             <Box sx={{ textAlign: "center" }}>
               <Typography variant="body2" color="text.secondary" align="center">
                 <MuiLink
-                  href="/retechfor/Aviso legal  -Somacyl 2021.pdf"
+                  href="Aviso legal  -Somacyl 2021.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   sx={{ mx: 1 }}
@@ -95,7 +95,7 @@ function Footer({ id }) {
                   Aviso Legal
                 </MuiLink>
                 <MuiLink
-                  href="/retechfor/Política de Cookies RGPD-SOMACYL 2024.pdf"
+                  href="Política de Cookies RGPD-SOMACYL 2024.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   sx={{ mx: 1 }}
@@ -103,7 +103,7 @@ function Footer({ id }) {
                   Política de Cookies
                 </MuiLink>
                 <MuiLink
-                  href="/retechfor/Política de privacidad web- SOMACYL 2024.pdf"
+                  href="Política de privacidad web- SOMACYL 2024.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   sx={{ mx: 1 }}
