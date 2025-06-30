@@ -6,6 +6,7 @@ import ArticuloNoticiaDestacado from '../news_items/ArticuloNoticiaDestacado';
 import ArticuloNoticiaGijon from '../news_items/ArticuloNoticiaGijon';
 import ArticuloSubvenciones from '../news_items/ArticuloSubvenciones';
 import ArticuloParticipamos from '../news_items/ArticuloParticipamos';
+import ArticuloHackaton from '../news_items/ArticuloHackaton';
 
 const urls = [
   'https://theobjective.com/espana/castilla-y-leon/2025-02-11/castilla-y-leon-impulsa-innovacion-forestal-europa/',
@@ -61,6 +62,7 @@ const NewsSection = ({ id }) => {
       title="Noticias Relevantes"
       backgroundColor="background.default"
     >
+      <ArticuloHackaton/>
      <ArticuloParticipamos/>
       <ArticuloSubvenciones/>
       <ArticuloNoticiaGijon/>
