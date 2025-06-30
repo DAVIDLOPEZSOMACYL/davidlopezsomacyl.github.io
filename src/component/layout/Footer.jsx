@@ -83,6 +83,36 @@ function Footer({ id }) {
           </Grid>
         </Grid>
         <Divider sx={{ my: 4 }} />
+          {/* Sección Politicas / Legal */}
+            <Box sx={{ textAlign: "center" }}>
+              <Typography variant="body2" color="text.secondary" align="center">
+                <MuiLink
+                  href="/retechfor/Aviso legal  -Somacyl 2021.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{ mx: 1 }}
+                >
+                  Aviso Legal
+                </MuiLink>
+                <MuiLink
+                  href="/retechfor/Política de Cookies RGPD-SOMACYL 2024.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{ mx: 1 }}
+                >
+                  Política de Cookies
+                </MuiLink>
+                <MuiLink
+                  href="/retechfor/Política de privacidad web- SOMACYL 2024.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{ mx: 1 }}
+                >
+                  Política de Privacidad
+                </MuiLink>
+              </Typography>
+            </Box>
+        <Divider sx={{ my: 4 }} />
         <Box sx={{ textAlign: "center" }}>
           <Typography variant="body2">
             &copy; {currentYear} RetechFOR. Todos los derechos reservados.
